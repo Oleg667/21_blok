@@ -14,33 +14,33 @@
 #     print("Printing from the parent() function")
 #
 #     def first_child():
-#         print("Printing from the first_child() function")
+# #         print("Printing from the first_child() function")
+# #
+# #     def second_child():
+# #         print("Printing from the second_child() function")
+# #
+# #     second_child()
+# #     first_child()
+# # print(parent())
 #
-#     def second_child():
-#         print("Printing from the second_child() function")
+# <<<<<<< HEAD
+# def my_decorator(func):
+#     def wrapper():
+#         print("Начало выполнения функции.")
+#         func()
+#         print("Конец выполнения функции.")
 #
-#     second_child()
-#     first_child()
-# print(parent())
+#     return wrapper
+#
+#
+# #Эту функцию мы будем декорировать
+# def my_first_decorator():
+# 	print("Это мой первый декоратор!")
+#
+# my_first_decorator = my_decorator(my_first_decorator)
+#
+# my_first_decorator()
 
-<<<<<<< HEAD
-def my_decorator(func):
-    def wrapper():
-        print("Начало выполнения функции.")
-        func()
-        print("Конец выполнения функции.")
-
-    return wrapper
-
-
-#Эту функцию мы будем декорировать
-def my_first_decorator():
-	print("Это мой первый декоратор!")
-
-my_first_decorator = my_decorator(my_first_decorator)
-
-my_first_decorator()
-=======
 # def my_decorator(func):
 #     def wrapper():
 #         print("Начало выполнения функции.")
@@ -63,4 +63,8 @@ from decorators import do_twice
 @do_twice
 def test_twice():
     print("Это вызов функции test_twice!")
->>>>>>> 31b386f (Initial commit)
+
+# @do_twice
+# def test_twice(str):
+#     print("Этот вызов возвращает строку {0}".format(str))
+
